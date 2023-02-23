@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700;800&family=Lexend+Deca&display=swap");
+
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+body {
+  background-image: linear-gradient(
+    136.31deg,
+    #0c0f07 14.16%,
+    #1f102b 53.39%,
+    #23193e 82.63%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header {
+  padding: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 40px;
+  list-style-type: none;
+}
+
+li a {
+  color: #e0daed;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+}
+
+main .left {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #9f7fdb;
+  max-width: 545px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+main form input {
+  font-family: "Lexend Deca", sans-serif;
+  height: 61px;
+  width: 408px;
+  border-radius: 10px;
+  background-color: #9f7fdb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 20px;
+}
+
+main form input::placeholder {
+  color: #ffffff;
+}
+
+main form .button-wrapper {
+  display: flex;
+  gap: 84px;
+}
+
+.button-wrapper .moon {
+  height: 84px;
+  width: 249px;
+  border-radius: 8px;
+  padding: 18px 28px 18px 28px;
+  background-color: #7735f3;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #e9e1fd;
+  cursor: pointer;
+}
+
+.button-wrapper .inform {
+  height: 84px;
+  width: 265px;
+  border-radius: 8px;
+  background-color: #9f7fdb;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.button-wrapper .inform a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  display: block;
+  color: #7735f3;
+  background-color: #ffffff;
+  padding: 0.3rem 1rem;
+  border-radius: 10px;
+}
