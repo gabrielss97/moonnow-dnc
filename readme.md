@@ -1,6 +1,6 @@
 # Validação de formulário
 
-Este projeto consiste em uma página com um formulário de inscrição, onde o usuário deve preencher seu nome e e-mail para poder se inscrever em um sorteio. Ao submeter o formulário, o código em JavaScript faz uma validação dos campos preenchidos antes de enviar o formulário para o servidor.
+Este projeto consiste em uma página com um formulário de inscrição, onde o usuário deve preencher seu nome e e-mail para poder se inscrever. Ao submeter o formulário, o código em JavaScript faz uma validação dos campos preenchidos antes de enviar o formulário para o servidor.
 
 ## Funcionamento
 
