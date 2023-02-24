@@ -133,7 +133,7 @@ main form .button-wrapper {
 }
 
 .error,
-.success {
+.success-style {
   display: block;
   color: #7735f3;
   background-color: #ffffff;
