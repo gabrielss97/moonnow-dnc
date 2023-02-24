@@ -132,7 +132,8 @@ main form .button-wrapper {
   justify-content: center;
 }
 
-.error {
+.error,
+.success {
   display: block;
   color: #7735f3;
   background-color: #ffffff;

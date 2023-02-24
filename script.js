@@ -3,11 +3,14 @@ const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const nameError = document.querySelector("#name-error");
 const emailError = document.querySelector("#email-error");
+const success = document.querySelector("#sucess");
 const emails = ["hotmail.com", "gmail.com", "yahoo.com", "outlook.com"];
 let namePass = false;
 let emailPass = false;
 
 form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
   if (nameInput.value === "") {
     nameError.textContent = "Por favor, preencha seu nome";
     nameError.classList.add("error");
@@ -31,7 +34,13 @@ form.addEventListener("submit", (event) => {
     }
   }
 
-  if (!namePass || !emailPass) {
-    event.preventDefault();
+  if (namePass && emailPass) {
+    success.textContent = "Formulário enviado com sucesso";
+    success.classList.add("success");
+    nameInput.textContent = "";
+    emailInput.textContent = "";
+  } else {
+    success.textContent = "";
+    success.classList.remove("success");
   }
 });
