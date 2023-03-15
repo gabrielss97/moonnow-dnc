@@ -127,12 +127,26 @@ main form .button-wrapper {
   width: 249px;
   border-radius: 8px;
   padding: 18px 28px 18px 28px;
-  background-color: #381676;
+  background: linear-gradient(180deg, #7834f3 0%, #411196 100%);
   border: none;
   font-size: 24px;
   font-weight: 700;
   line-height: 48px;
   color: #e9e1fd;
+  cursor: pointer;
+}
+
+.button-wrapper .moon:hover {
+  height: 84px;
+  width: 249px;
+  border-radius: 8px;
+  padding: 18px 28px 18px 28px;
+  background: linear-gradient(180deg, #efe9fa 0%, #755ca3 100%);
+  color: #403658;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
   cursor: pointer;
 }
 
