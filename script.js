@@ -64,6 +64,7 @@ form.addEventListener("submit", (event) => {
   }
 });
 
+// Verifica a variavel switchMode, caso verdadeiro o tema será white mode, caso falso dark mode.
 switchButton.addEventListener("click", () => {
   switchMode = !switchMode;
   if (switchMode) {
