@@ -13,9 +13,9 @@
 body {
   background-image: linear-gradient(
     136.31deg,
-    #0c0f07 14.16%,
-    #1f102b 53.39%,
-    #23193e 82.63%
+    #7240f0 14.16%,
+    #844fb5 53.39%,
+    #5f5e95 82.63%
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +40,7 @@ header nav ul {
 }
 
 li a {
-  color: #e0daed;
+  color: #372b4c;
   text-decoration: none;
 }
 
@@ -63,9 +63,9 @@ main h1 {
   line-height: 60px;
   background: linear-gradient(
     95.4deg,
-    #9f7fdb 0.42%,
-    #bdbff7 46.87%,
-    #6b26ec 81.5%
+    #431f87 0.42%,
+    #2d2f76 46.87%,
+    #1e064e 81.5%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -81,9 +81,9 @@ main h2 {
   line-height: 60px;
   background: linear-gradient(
     95.4deg,
-    #9f7fdb 0.42%,
-    #bdbff7 46.87%,
-    #6b26ec 81.5%
+    #431f87 0.42%,
+    #2d2f76 46.87%,
+    #1e064e 81.5%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -105,16 +105,16 @@ main form input {
   width: 408px;
   border-radius: 10px;
   background-color: #9f7fdb;
-  color: #ffffff;
+  color: #372b4c;
   font-size: 14px;
-  border: none;
   font-weight: 400;
   line-height: 20px;
   padding-left: 20px;
+  border: none;
 }
 
 main form input::placeholder {
-  color: #ffffff;
+  color: #372b4c;
 }
 
 main form .button-wrapper {
@@ -127,7 +127,7 @@ main form .button-wrapper {
   width: 249px;
   border-radius: 8px;
   padding: 18px 28px 18px 28px;
-  background-color: #7735f3;
+  background-color: #381676;
   border: none;
   font-size: 24px;
   font-weight: 700;
@@ -140,7 +140,7 @@ main form .button-wrapper {
   height: 84px;
   width: 265px;
   border-radius: 8px;
-  background-color: #9f7fdb;
+  background-color: #493a66;
   border: none;
   font-size: 24px;
   font-weight: 700;
@@ -161,8 +161,8 @@ main form .button-wrapper {
 .error,
 .success-style {
   display: block;
-  color: #7735f3;
-  background-color: #ffffff;
+  color: #e3dbf3;
+  background-color: #242424;
   padding: 0.3rem 1rem;
   border-radius: 10px;
 }

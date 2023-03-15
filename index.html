@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>moonnow</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" id="link-style" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -16,6 +16,12 @@
           <li><a href="">QUEM SOMOS</a></li>
           <li><a href="">NOSSO PROPÓSITO</a></li>
           <li><a href="">SUPORTE</a></li>
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="switch" />
+              <span class="slider"></span>
+            </label>
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,11 +37,15 @@
             <button type="submit" class="moon">Quero ir pra lua!</button>
             <button class="inform"><a href="">Mais informações</a></button>
           </div>
-          <span id="success"></span>
         </form>
       </div>
       <div class="right">
-        <img src="./assets/hero-ilustration.png" alt="hero ilustration" />
+        <h2 id="msg"></h2>
+        <img
+          src="./assets/hero-ilustration.png"
+          alt="hero ilustration"
+          id="img"
+        />
       </div>
     </main>
   </body>

@@ -4,7 +4,10 @@ const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const nameError = document.querySelector("#name-error");
 const emailError = document.querySelector("#email-error");
-const success = document.querySelector("#success");
+const switchButton = document.querySelector("#switch");
+const img = document.querySelector("#img");
+const msg = document.querySelector("#msg");
+let switchMode = false;
 
 // Define os provedores de e-mail válidos
 const emails = ["hotmail.com", "gmail.com", "yahoo.com", "outlook.com"];
@@ -50,17 +53,22 @@ form.addEventListener("submit", (event) => {
 
   // Verifica se os campos de nome e e-mail estão preenchidos corretamente e exibe mensagem de sucesso se estiverem
   if (namePass && emailPass) {
-    success.textContent = "Formulário enviado com sucesso";
-    success.classList.add("success-style");
+    img.src = "./assets/parabens.png";
+    msg.innerHTML = `PARABÉNS, ${nameInput.value.toUpperCase()}`;
     // Limpa os campos de nome e e-mail
     nameInput.value = "";
     emailInput.value = "";
     // Reseta as variáveis de validação dos campos
     namePass = false;
     emailPass = false;
+  }
+});
+
+switchButton.addEventListener("click", () => {
+  switchMode = !switchMode;
+  if (switchMode) {
+    document.querySelector("#link-style").href = "style-white.css";
   } else {
-    // Limpa a mensagem de sucesso se os campos não estiverem preenchidos corretamente
-    success.textContent = "";
-    success.classList.remove("success-style");
+    document.querySelector("#link-style").href = "style.css";
   }
 });
